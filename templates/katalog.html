@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CD Katalog</title>
+</head>
+<body>
+    <h1>::: Albümler :::</h1>
+    <ol>
+    {% for album in data %}
+        <li>{{ album.TITLE }} ||{{ album.YEAR }}|| - {{ album.ARTIST }} ({{ album.COUNTRY }})</li>
+    {% endfor %}
+    </ol>
+</body>
+</html>
